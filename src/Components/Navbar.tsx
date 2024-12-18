@@ -18,10 +18,10 @@ const Navbar = () => {
       </div>
       <div className='hidden md:flex justify-center gap-4'>
         {[
-          { name: "Products", path: "/products" }, // used dynamic method
+          { name: "Products",  path: "/products" }, // used dynamic method
           { name: "Solutions", path: "/solutions" },
           { name: "Resources", path: "/resources" },
-          { name: "Pricing", path: "/pricing" },
+          { name: "Pricing",   path: "/pricing" },
         ].map((item) => (
           <li key={item.name} className='list-none'>
             <Link href={item.path}>{item.name}</Link>
