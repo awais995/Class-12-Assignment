@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const FooterComponent = ({ logoSrc, description, sections, copyright }: any) => {
@@ -7,7 +8,7 @@ const FooterComponent = ({ logoSrc, description, sections, copyright }: any) => 
         <div className="flex flex-col md:flex-row justify-evenly items-start md:items-center space-y-8 md:space-y-0">
           {/* Left Section - Logo and Description */}
           <div className="max-w-sm">
-            <img src={logoSrc} alt="Logo" className="h-12 mb-4" />
+            <Image src={logoSrc} alt="Logo" width={200} height={200} className="h-12 mb-4"  />
             <p className="text-gray-300 text-sm leading-relaxed">{description}</p>
           </div>
 
