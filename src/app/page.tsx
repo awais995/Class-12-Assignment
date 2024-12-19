@@ -1,5 +1,7 @@
-import Hero from "@/Components/Hero";
-import Project from "@/Components/Project";
+import Hero from "./Hero";
+import Project from "./project";
+import Team from "./Team";
+
 
 
 export default function Home() {
@@ -7,6 +9,9 @@ export default function Home() {
    <div>
     <Hero />
     <Project />
+    <Team />
+
+    
    </div>
   );
 }
